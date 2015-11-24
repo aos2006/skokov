@@ -1,0 +1,31 @@
+.page-header
+	position: relative
+	padding-top: 70px - 20px
+	background-image: url("../img/decor-triangles-bg.png"),url("../img/page-header-bg.jpg")
+	background-position: 0 100%,0 0
+	background-repeat: no-repeat,no-repeat
+	background-size: 100% 585px,100% 100%
+	background-color: #4b4b4b
+	//min-height: 885px
+	&--inner-page
+		min-height: 650px
+		.profit
+			top: 30px
+	&--main-page
+		min-height: 885px
+	&--inner-page &__navigation
+		margin-right: 200px
+	&__navigation
+		float: right
+		+clr
+	&__banner
+		margin-top: 174px - 37px
+	&__title
+		margin-top: 102px
+		color: #fff
+		@extend %verdana
+		font-size: 60px
+		font-weight: 700
+		line-height: 1.23
+		text-align: center
+		text-transform: uppercase

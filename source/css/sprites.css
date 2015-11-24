@@ -1,0 +1,119 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-adreess-mail {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -186px;
+  width: 30px;
+  height: 30px;
+}
+.icon-adreess-place {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -276px;
+  width: 30px;
+  height: 30px;
+}
+.icon-adreess-tell {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -231px;
+  width: 30px;
+  height: 30px;
+}
+.icon-creative-bg {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -881px;
+  width: 1600px;
+  height: 400px;
+}
+.icon-decor-triangles-bg {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -1296px;
+  width: 1600px;
+  height: 585px;
+}
+.icon-search {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -142px;
+  width: 42px;
+  height: 29px;
+}
+.icon-services-customer {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -741px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-digital {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -391px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-information {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -321px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-perfomance {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -811px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-private {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -461px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-result {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -531px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-strategy {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -601px;
+  width: 55px;
+  height: 55px;
+}
+.icon-services-transformation {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -671px;
+  width: 55px;
+  height: 55px;
+}
+.icon-social-fb {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -105px;
+  width: 12px;
+  height: 22px;
+}
+.icon-social-in {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -33px;
+  width: 22px;
+  height: 20px;
+}
+.icon-social-tw {
+  background-image: url(../img/sprites.png);
+  background-position: 0px 0px;
+  width: 22px;
+  height: 18px;
+}
+.icon-social-youtube {
+  background-image: url(../img/sprites.png);
+  background-position: 0px -68px;
+  width: 18px;
+  height: 22px;
+}
