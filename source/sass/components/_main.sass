@@ -274,6 +274,7 @@
 	//overflow: hidden
 	@extend %dib-top
 	width: 563px
+	overflow: hidden
 	&__title
 		@extend .doing__title
 /*{end clients}*/
@@ -281,8 +282,9 @@
 /*{start clients-slider}*/
 .clients-slider
 	z-index: 10
-	width: 9999px
 	font-size: 0
+	&__inner-wrapper
+		width: 9999px
 	&__list
 		@extend %dib-mid
 		width: 563px
@@ -297,7 +299,7 @@
 		&:nth-child(6)
 			margin-right: 0
 	&__controls
-		width: 563px
+		width: 100%
 		text-align: center
 	&__control
 		@extend %dib-top
@@ -665,6 +667,9 @@
 		width: 42px
 		height: 28px
 		background-color: #fe504f
+		background-image: url(../img/sprites.png)
+		background-position: 0px -142px
+		cursor: pointer
 /*{end search}*/
 
 /*{start post}*/

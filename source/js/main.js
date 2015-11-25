@@ -44,9 +44,7 @@ Slider.prototype.control = function(event) {
             childrens[i].classList.remove("clients-slider__control--active");
     }
         controlIndex = [].indexOf.call(childrens,target);
-        //Вот строчка выше ,как он определяет ,что выбран точный элемент ,ведь они вроде как идентичны
-        this._itemMoving.style.marginLeft = (-563  * controlIndex + "px");
-        console.dir(controlIndex);
+        this._itemMoving.style.marginLeft = -563 * controlIndex + "px";
         target.classList.add("clients-slider__control--active");
     }
 }
@@ -54,7 +52,7 @@ Slider.prototype.control = function(event) {
 var slider = new Slider({
    el: ".js-slider",
     control: ".js-slider-control",
-    itemMoving: ".clients-slider",
+    itemMoving: ".clients-slider__inner-wrapper",
     widthPosition: 563
 
 });

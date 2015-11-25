@@ -373,14 +373,16 @@ body {
 /*{end doing} */
 /*{start clients} */
 .clients {
-  width: 563px; }
+  width: 563px;
+  overflow: hidden; }
 
 /*{end clients} */
 /*{start clients-slider} */
 .clients-slider {
   z-index: 10;
-  width: 9999px;
   font-size: 0; }
+  .clients-slider__inner-wrapper {
+    width: 9999px; }
   .clients-slider__list {
     width: 563px;
     margin-bottom: 15px; }
@@ -392,7 +394,7 @@ body {
     .clients-slider__item:nth-child(3), .clients-slider__item:nth-child(6) {
       margin-right: 0; }
   .clients-slider__controls {
-    width: 563px;
+    width: 100%;
     text-align: center; }
   .clients-slider__control {
     margin-right: 5px;
@@ -725,7 +727,10 @@ body {
   .search__icon {
     width: 42px;
     height: 28px;
-    background-color: #fe504f; }
+    background-color: #fe504f;
+    background-image: url(../img/sprites.png);
+    background-position: 0px -142px;
+    cursor: pointer; }
 
 /*{end search} */
 /*{start post} */
