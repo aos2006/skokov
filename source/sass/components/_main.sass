@@ -274,7 +274,7 @@
 	//overflow: hidden
 	@extend %dib-top
 	width: 563px
-	overflow: hidden
+	//overflow: hidden
 	&__title
 		@extend .doing__title
 /*{end clients}*/
@@ -284,10 +284,12 @@
 	z-index: 10
 	font-size: 0
 	&__inner-wrapper
-		width: 9999px
+		width: 563px
+		overflow: hidden
 	&__list
 		@extend %dib-mid
 		width: 563px
+		height: 400px
 		margin-bottom: 15px
 	&__item
 		@extend %dib-mid
@@ -301,17 +303,6 @@
 	&__controls
 		width: 100%
 		text-align: center
-	&__control
-		@extend %dib-top
-		margin-right: 5px
-		width: 35px
-		height: 4px
-		background-color: #aeaeae
-		cursor: pointer
-		&--active
-			background-color: #fe504f
-		&:last-child
-			margin-right: 0
 
 /*{end clients-slider}*/
 
@@ -835,3 +826,20 @@
 		opacity: 0
 	to
 		opacity: 1
+
+
+.slick-dots
+	text-align: center
+	li
+		@extend %dib-mid
+		margin-right: 5px
+		width: 35px
+		height: 4px
+		background-color: #aeaeae
+		cursor: pointer
+		&:last-child
+			margin-right: 0
+	.slick-active
+		background-color: #fe504f
+	button
+		display: none

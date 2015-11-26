@@ -75,11 +75,11 @@ body {
   background-color: #ffffff;
   font-family: "Arial", "Helvetica", sans-serif; }
 
-.page-footer__copyright, .logo, .navigation, .navigation__item, .clients-slider__list, .clients-slider__item, .adreess-list__icon, .social-list, .social-list__item, .search__field, .search__icon, .enter-comment__field, .enter-comment__btn, .comment__item, .comment__item:after {
+.page-footer__copyright, .logo, .navigation, .navigation__item, .clients-slider__list, .clients-slider__item, .adreess-list__icon, .social-list, .social-list__item, .search__field, .search__icon, .enter-comment__field, .enter-comment__btn, .comment__item, .comment__item:after, .slick-dots li {
   display: inline-block;
   vertical-align: middle; }
 
-.services-list__item, .doing, .clients, .clients-slider__control, .team__item, .news-tape__img, .news-tape__item, .adreess, .form, .comment__photo, .comment__inner-wrapper {
+.services-list__item, .doing, .clients, .team__item, .news-tape__img, .news-tape__item, .adreess, .form, .comment__photo, .comment__inner-wrapper {
   display: inline-block;
   vertical-align: top; }
 
@@ -373,8 +373,7 @@ body {
 /*{end doing} */
 /*{start clients} */
 .clients {
-  width: 563px;
-  overflow: hidden; }
+  width: 563px; }
 
 /*{end clients} */
 /*{start clients-slider} */
@@ -382,9 +381,11 @@ body {
   z-index: 10;
   font-size: 0; }
   .clients-slider__inner-wrapper {
-    width: 9999px; }
+    width: 563px;
+    overflow: hidden; }
   .clients-slider__list {
     width: 563px;
+    height: 400px;
     margin-bottom: 15px; }
   .clients-slider__item {
     width: 184px;
@@ -396,16 +397,6 @@ body {
   .clients-slider__controls {
     width: 100%;
     text-align: center; }
-  .clients-slider__control {
-    margin-right: 5px;
-    width: 35px;
-    height: 4px;
-    background-color: #aeaeae;
-    cursor: pointer; }
-    .clients-slider__control--active {
-      background-color: #fe504f; }
-    .clients-slider__control:last-child {
-      margin-right: 0; }
 
 /*{end clients-slider} */
 /*{start team} */
@@ -883,3 +874,17 @@ body {
     opacity: 0; }
   to {
     opacity: 1; } }
+.slick-dots {
+  text-align: center; }
+  .slick-dots li {
+    margin-right: 5px;
+    width: 35px;
+    height: 4px;
+    background-color: #aeaeae;
+    cursor: pointer; }
+    .slick-dots li:last-child {
+      margin-right: 0; }
+  .slick-dots .slick-active {
+    background-color: #fe504f; }
+  .slick-dots button {
+    display: none; }

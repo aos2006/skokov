@@ -24,36 +24,14 @@ var workers = new Workers({
     target: ".team__info"
 });
 
-
-//Slider-clients
-function Slider(options) {
-    this._el = document.querySelectorAll(options.el);
-    this._itemMoving = document.querySelector(options.itemMoving);
-    this._control = document.querySelectorAll(options.control);
-    for (var i = 0; i < this._el.length; i++) {
-        this._el[i].addEventListener("click",this.control.bind(this));
-    }
-}
-
-Slider.prototype.control = function(event) {
- var target = event.target;
- var childrens = document.querySelectorAll(".js-slider-control");
-    var controlIndex;
-    if (target.hasAttribute("data-slider-control")) {
-        for (var i = 0; i < childrens.length; i++) {
-            childrens[i].classList.remove("clients-slider__control--active");
-    }
-        controlIndex = [].indexOf.call(childrens,target);
-        this._itemMoving.style.marginLeft = -563 * controlIndex + "px";
-        target.classList.add("clients-slider__control--active");
-    }
-}
-
-var slider = new Slider({
-   el: ".js-slider",
-    control: ".js-slider-control",
-    itemMoving: ".clients-slider__inner-wrapper",
-    widthPosition: 563
-
+$(document).ready(function(){
+    $(".js-slider").slick({
+        autoplay: true,
+        arrows: false,
+        dots: true,
+    })
 });
+
+
+
 
