@@ -87,6 +87,7 @@ module.exports = function(grunt) {
 						"js/**",
 						"fonts/**",
                         "css/screen.css",
+                        "bower_components/**",
 						"*.html"
 					],
 					dest: "build"
@@ -190,13 +191,6 @@ module.exports = function(grunt) {
 			}
 		}
 
-
-
-
-		
-
-		
-		
 	});
 
 	grunt.registerTask('default', [
