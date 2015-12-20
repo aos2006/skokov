@@ -57,7 +57,7 @@ module.exports = function(grunt) {
 				},
 				files: [{
 					expand: true,
-					src: ["build/img/**/*.{png,jpg,gif,svg}"]
+					src: ["build/img/*.{png,jpg,gif,svg}"]
 				}]
 			}
 		},
@@ -86,8 +86,8 @@ module.exports = function(grunt) {
 						"img/**",
 						"js/**",
 						"fonts/**",
-						"index.html",
-						
+                        "css/screen.css",
+						"*.html"
 					],
 					dest: "build"
 				}]
@@ -212,14 +212,9 @@ module.exports = function(grunt) {
 	]);
 	
 	grunt.registerTask('optimization', [
+        "copy",
 		"cssmin",
-		"htmlmin",
-		"ucss",
 		"imagemin"
-
-
-
-
 	]);
 	
 };
